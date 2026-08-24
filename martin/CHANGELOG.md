@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.15.0](https://github.com/maplibre/martin/compare/martin-v1.14.0...martin-v1.15.0) - 2026-08-24
+
+### Added
+
+- *(config)* warn about legacy Postgres env var usage ([#3151](https://github.com/maplibre/martin/pull/3151))
+- *(postgres)* add --ssl-cert and --ssl-key CLI flags ([#3150](https://github.com/maplibre/martin/pull/3150))
+
+### Fixed
+
+- *(postgres)* keep per-source convert_to_* overrides on the reload path ([#3144](https://github.com/maplibre/martin/pull/3144))
+
+### Other
+
+- fix typo explicitely -> explicitly (source + generated), recomend -> recommend ([#3147](https://github.com/maplibre/martin/pull/3147))
+- *(pmtiles)* open file sources concurrently and share one client per store ([#3131](https://github.com/maplibre/martin/pull/3131))
+- *(reload)* build advisory additions and updates concurrently ([#3142](https://github.com/maplibre/martin/pull/3142))
+- *(discovery)* return warnings from Discovery::discover ([#3143](https://github.com/maplibre/martin/pull/3143))
+- *(postprocesing)* refactor docs to accept the new postprocessing section ([#3139](https://github.com/maplibre/martin/pull/3139))
+- adopt clippy 1.98 ([#3137](https://github.com/maplibre/martin/pull/3137))
+- fix cors logging logging `unrecognisable` ([#3136](https://github.com/maplibre/martin/pull/3136))
+- fix fmt ([#3135](https://github.com/maplibre/martin/pull/3135))
+- *(config)* resolve file source ids before opening the sources ([#3133](https://github.com/maplibre/martin/pull/3133))
+- *(cache)* fix some CI flakes by widening font + sprite cache expiry margins ([#3146](https://github.com/maplibre/martin/pull/3146))
+- *(test)* migrate the save-config e2e tests to rust and retire tests/test.sh ([#3105](https://github.com/maplibre/martin/pull/3105))
+
 ## [1.14.0](https://github.com/maplibre/martin/compare/martin-v1.13.0...martin-v1.14.0) - 2026-08-17
 
 ### Security
